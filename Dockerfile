@@ -7,7 +7,7 @@ RUN go mod download
 COPY *.go ./
 COPY static ./static
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /belajar-cicd-pemula
+RUN go build -o /belajar-cicd-pemula
 
 EXPOSE 3000
 

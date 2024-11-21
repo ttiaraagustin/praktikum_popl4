@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ttiaraagustin/myshop:latest
+    volumes:
+      - D:/Go:/app
+    ports:
+      - "3000:3000"

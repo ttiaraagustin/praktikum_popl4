@@ -19,7 +19,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: '1.20'
+        go-version: '1.23.2'
 
     - name: Build
       run: go build -v ./...
@@ -37,4 +37,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ttiaraagustin/praktikum-popl4:latest
+        tags: ttiaraagustin/myshop:latest
